@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn"><title type="text">JS-CHEN</title><subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle><updated>2022-07-13T07:31:54+00:00</updated><id>https://waldonchen.github.io/</id><link rel="alternate" type="text/html" href="https://waldonchen.github.io/"/><link rel="self" type="application/atom+xml" href="https://waldonchen.github.io/atom.xml"/><author><name>Jun-Shi Chen</name><uri>https://waldonchen.github.io/</uri><email>cjuns@ustc.edu.cn</email></author><rights>Copyright @ 2022-2032, Jun-Shi Chen; All Rights Reserved.</rights><generator uri="https://gohugo.io/" version="0.101.0">Hugo</generator><entry><title type="text">My First Post</title><link rel="alternate" type="text/html" href="https://waldonchen.github.io/posts/my-first-post/"/><id>https://waldonchen.github.io/posts/my-first-post/</id><updated>2022-07-13T07:31:47+00:00</updated><published>2022-07-13T11:45:59+08:00</published><author><name>Jun-Shi Chen</name><uri>https://github.com/waldonchen/</uri><email>cjuns@ustc.edu.cn</email></author><rights>Copyright @ 2022-2032, Jun-Shi Chen; All Rights Reserved.</rights><summary type="html">First Section Hello, World!</summary><content type="html">&lt;h1 id="first-section">First Section&lt;/h1>
+&lt;p>Hello, World!&lt;/p></content></entry><entry><title type="text">深度学习编译器</title><link rel="alternate" type="text/html" href="https://waldonchen.github.io/posts/deep-learning-compiler/"/><id>https://waldonchen.github.io/posts/deep-learning-compiler/</id><updated>2022-07-13T07:31:47+00:00</updated><published>2022-07-07T11:03:00+08:00</published><author><name>Jun-Shi Chen</name><uri>https://github.com/waldonchen/</uri><email>cjuns@ustc.edu.cn</email></author><rights>Copyright @ 2022-2032, Jun-Shi Chen; All Rights Reserved.</rights><summary type="html">本文整理深度学习编译器相关的论文和来自知乎等网站的相关材料[1]。 1 深度学习编译器相关论文 1.1 Survey The Deep Learning Compiler: A Comprehensive Survey DL编译器的surv……</summary><content type="html">&lt;p>本文整理深度学习编译器相关的论文和来自知乎等网站的相关材料&lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_1">[1]&lt;/a>。&lt;/p>
+&lt;h2 id="深度学习编译器相关论文">&lt;span class="section-num">1&lt;/span> 深度学习编译器相关论文&lt;/h2>
+&lt;h3 id="survey">&lt;span class="section-num">1.1&lt;/span> Survey&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>The Deep Learning Compiler: A Comprehensive Survey&lt;/p>
+&lt;blockquote>
+&lt;p>DL编译器的survey，总结了DL编译器的设计框架&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>
+&lt;p>An In-depth Comparison of Compilers for Deep Neural Networks on Hardware&lt;/p>
+&lt;blockquote>
+&lt;p>比较了Halide, XLA, TVM, TC等几种编译器的性能&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="tvm系列">&lt;span class="section-num">1.2&lt;/span> TVM系列&lt;/h3>
+&lt;!--list-separator-->
+&lt;ol>
+&lt;li>
+&lt;p>OSDI'18 - TVM: An Automated End-to-End Optimizing Compiler for Deep Learning&lt;/p>
+&lt;p>文章&lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_2">[2]&lt;/a>完整介绍了 TVM 的设计的背景，目标，技术难点和解决方案。该文章确定了整个 TVM 的技术架构，包括硬件无关的图级别的优化，硬件相关的算子优化，基于代价模型的搜索寻优等等。快速了解此文可以阅读已有的一些&lt;a href="https://zhuanlan.zhihu.com/p/498115380">论文阅读笔记&lt;/a>。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;!--list-separator-->
+&lt;ol start="2">
+&lt;li>
+&lt;p>IWMLPL'18 - Relay - A New IR for Machine Learning Frameworks&lt;/p>
+&lt;p>Relay&lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_3">[3]&lt;/a>是TVM 新的中间表示形式，不同框架的模型先转化成
+Relay，然后在Relay 上来做图优化。&lt;a href="https://www.zhihu.com/question/331611341/answer/875630325">如何评价TVM的新IR（Relay）？&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;!--list-separator-->
+&lt;ol start="3">
+&lt;li>
+&lt;p>Relay: A High-Level Compiler for Deep Learning&lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_4">[4]&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>TVM的第二代high-level IR，类似于编程语言，设计了语法规则，引入了let-binding机制。DL背景的开发者可以使用data flow graph来定义计算图，
+PL(Program Language)背景的研究人员可以使用let binding来定义计算图。Let binding机制通过compute scope解决了AST的二义性问题。&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/462831936">Relay: A High-Level Compiler for Deep Learning 论文翻译&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="auto-tuning相关工作">&lt;span class="section-num">1.3&lt;/span> Auto-tuning相关工作&lt;/h3>
+&lt;!--list-separator-->
+&lt;ol>
+&lt;li>
+&lt;p>NIPS'18 - Learning to Optimize Tensor Programs&lt;/p>
+&lt;p>文章&lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_5">[5]&lt;/a>发表于 2018 年的NIPS，详细介绍了autotvm 自动寻优方案。文章是对论文&lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_2">[2]&lt;/a>的第5节的一个更加详细的扩充。主要观点在
+OSDI2018 的论文里都有描述，论文 1 没有涉及的的内容是引入了 transfer learning 的应用。&lt;/p>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/457573510">Learning to Optimize Tensor Programs解读&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;!--list-separator-->
+&lt;ol start="2">
+&lt;li>
+&lt;p>OSDI'20 - Ansor: Generating High-Performance Tensor Programs for Deep Learning&lt;/p>
+&lt;p>Ansor 论文&lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_6">[6]&lt;/a>发表于2020 年 OSDI ， 其核心目标是生成高效的程序，具体包括两个部分(1)如何扩大搜索空间(2)如何提高搜索的性能和效率。&lt;/p>
+&lt;p>为了扩大搜索空间，改进了TVM 基于模板的搜索空间定义，通过层次化搜索的方案，解耦
+high-level 结构和low-level 细节。&lt;/p>
+&lt;p>为了提升搜索的性能和效率，ansor 改进了TVM 的搜索策略，将搜索算法从模拟退火算法修改成了遗传算法(原文是进化搜索 evolutionary search，国内多翻译为遗传算法)，从而能够有效的跳出局部最优。&lt;/p>
+&lt;blockquote>
+&lt;p>把schedule分成sketch和annotation两层，sketch相当于TVM的schedule template，Ansor
+可以先搜索出sketch，再搜索annotation。&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ol>
+&lt;!--list-separator-->
+&lt;ol start="3">
+&lt;li>
+&lt;p>FlexTensor: An Automatic Schedule Exploration and Optimization Framework for Tensor Computation on Heterogeneous System&lt;/p>
+&lt;p>FlexTensor &lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_7">[7]&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;!--list-separator-->
+&lt;ol start="4">
+&lt;li>CHAMELEON: ADAPTIVE CODE OPTIMIZATION FOR EXPEDITED DEEP NEURAL NETWORK COMPILATION&lt;/li>
+&lt;/ol>
+&lt;h3 id="polyhedral">&lt;span class="section-num">1.4&lt;/span> Polyhedral&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>PLDI'21 - AKG: Automatic Kernel Generation for Neural Processing Units using Polyhedral Transformations &lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_8">[8]&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/384191216">PLDI 2021论文分析(一)：AKG-NPU上算子自动生成技术探索&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>MICRO'20 - Optimizing the Memory Hierarchy by Compositing Automatic Transformations on Computations and Data &lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_9">[9]&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/333394142">53年来国内唯三，MindSpore加速昇腾芯片论文获国际顶会MICRO最佳论文提名&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--listend-->
+&lt;ul>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/QEooKxP1sm5O90AUiqKQEQ">一.Poly基本原理及卷积分析示例&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/NRtud1UImE5ArZ2zQWFRyg">二. Poly在深度学习领域中发挥的作用&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/bLBIrJb82IsnyoXSEr2xtw">三. AI芯片上利用Poly进行软硬件优化的一些问题&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>上面面三篇公众号文章介绍Poly的一些基本原理和在DL领域中的应用，作者是要术甲杰，是
+Poly研究领域的博士&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/199683290?utm_source=wechat_session&amp;amp;utm_medium=social&amp;amp;utm_oi=848584440992141312">Polyhedral编译调度算法(1)------Pluto算法&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>同样是要术甲杰写的介绍Pluto算法的文章&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="others">&lt;span class="section-num">1.5&lt;/span> Others&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Tensorflow XLA/JAX&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>MLIR&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>GLOW @facebook&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Halide&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tensor comprehension&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/141256429?utm_source=wechat_session&amp;amp;utm_medium=social&amp;amp;utm_oi=837261071604645888&amp;amp;wechatShare=1&amp;amp;s_r=0">MLIR文章视频汇总&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/MondayYuan/DLCompilerResource/blob/master/pdf">Multi-Level Tactics: Abstraction Raising in Multi-Level IR&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/MondayYuan/DLCompilerResource/blob/master/pdf/FusionStitching.pdf">FUSIONSTITCHING: DEEP FUSION AND CODE GENERATION FOR TENSORFLOW COMPUTATIONS ON GPUS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>用shared memory来实现更激进的operator fusion策略&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/MondayYuan/DLCompilerResource/blob/master/pdf/AutoDiffinML.pdf">Automatic differentiation in ML: Where we are and where we should be going&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/MondayYuan/DLCompilerResource/blob/master/pdf/AutoDiffSurvey.pdf">Automatic Differentiation in Machine Learning: a Survey&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>两篇关于自动微分的survey&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/MondayYuan/DLCompilerResource/blob/master/pdf/IREE.pdf">IREE: MLIR-based End-to-End ML Tooling&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>schedule和execution阶段进行联合优化&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/163717035">AI编译优化--总纲&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/163857096">访存密集算子优化&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/174817186">计算密集算子优化&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/194353051">AI编译优化--业务实践&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>阿里杨军的系列文章&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/MondayYuan/DLCompilerResource/blob/master/pdf/swTVM.pdf">swTVM: Exploring the Automated Compilation for Deep Learning on Sunway Architecture&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>用TVM在神威超算上生成算子&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/MondayYuan/DLCompilerResource/blob/master/pdf/TFGraphOptimizationsStanford.pdf">TensorFlow Graph Optimizations&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>TensorFow中的图优化&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="其它相关文档">&lt;span class="section-num">2&lt;/span> 其它相关文档&lt;/h2>
+&lt;h3 id="ai编译器-金雪峰">&lt;span class="section-num">2.1&lt;/span> &lt;a href="https://www.zhihu.com/people/jin-xue-feng">AI编译器@金雪峰&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/508345356">AI编译器的概览、挑战和实践&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.zhihu.com/question/396105855/answer/1868408680">针对神经网络的编译器和传统编译器的区别和联系是什么？&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/342865488">深度学习编译器系列之嵌入在 AI 框架中的深度学习编译器&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="漫游深度学习编译器-知乎">&lt;span class="section-num">2.2&lt;/span> &lt;a href="https://www.zhihu.com/column/c_1388629436179378176">漫游深度学习编译器@知乎&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/381324332">TVM系列「一」TVM概览&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/381330616">TVM系列「二」TVM学习资源&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/381331888">TVM系列「三」TVM官方文档的结构&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/381333188">TVM系列「四」TVM的使用：compute+schedule双剑合璧&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/381691430">TVM系列「五」TVM整体架构及其代码生成&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/390087648">TVM系列「六」Relay IR与Relay Pass&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/392015642">TVM系列「七」AutoTVM（AutoTune）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/394765523">TVM系列「八」AutoScheduler「Ansor」&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="tvm代码走读-知乎专栏">&lt;span class="section-num">2.3&lt;/span> &lt;a href="https://www.zhihu.com/column/c_1254058636869603328">TVM代码走读【@知乎专栏】&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/145676823">TVM代码走读（一） ONNX前端&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/149386093">TVM代码走读（二） 算子实现&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/149988448">TVM代码走读（三） 图优化1--初识PASS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/151351056">TVM代码走读（四） 图优化2--TVM RELAY树结构&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/151815380">TVM代码走读（五） 图优化3-- Constant Folding&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/153098112">TVM代码走读（六） 图优化4-- Fuse ops&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/161195053">TVM代码走读（七） 模型编译1--调用链&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/165236267">TVM代码走读（八） 模型编译2--编译优化&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/166551011">TVM代码走读（九） 计算和调度&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/181399538">TVM代码走读（十） AutoTvm&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/208594323">TVM代码走读（十一） te::Stage&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/202938038">TVM代码走读（十二） lower--phase 0&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/245453441">TVM代码走读（十三） arith::analyzer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/257128533">TVM代码走读（十四） lower--ScheduleOps&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/263581574">TVM代码走读（十五） lower--relay func到lower的流程梳理&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/267986568">TVM代码走读（十六） lower--phase0后续流程&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/275708458">TVM代码走读（十七） lower--phase 1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/307689224">TVM代码走读（十八） lower--LoopPartition(phase 2)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="深度学习编译器-柳嘉强">&lt;span class="section-num">2.4&lt;/span> &lt;a href="https://www.zhihu.com/people/liu-jia-qiang-18-27">深度学习编译器@柳嘉强&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/511043383">7. 深度学习编译器 - 算子的高效实现&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/469972467">6. 深度学习编译器 - 低精度计算之量化&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/436025551">5. 深度学习编译器 - 图优化（续)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/412217136">5. 深度学习编译器-图优化&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/344752857">4. 深度学习编译器-自动微分&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/338299844">3. 深度学习编译器 - 图表示&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/309793908">2. 深度学习编译器 - 前端&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/307750772">1. 深度学习编译器-引言&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="21442327712599129486">参考文献&lt;/h2>
+&lt;style>.csl-left-margin{float: left; padding-right: 0em;}
+.csl-right-inline{margin: 0 0 0 1em;}&lt;/style>&lt;div class="csl-bib-body">
+&lt;div class="csl-entry">&lt;a id="citeproc_bib_item_1">&lt;/a>
+&lt;div class="csl-left-margin">[1]&lt;/div>&lt;div class="csl-right-inline">陈逢锦, “Tvm及深度学习编译器相关论文,” 2022. &lt;a href="https://zhuanlan.zhihu.com/p/500041871">https://zhuanlan.zhihu.com/p/500041871&lt;/a> (accessed May 03, 2022).&lt;/div>
+&lt;/div>
+&lt;div class="csl-entry">&lt;a id="citeproc_bib_item_2">&lt;/a>
+&lt;div class="csl-left-margin">[2]&lt;/div>&lt;div class="csl-right-inline">T. Chen &lt;i>et al.&lt;/i>, “TVM: an automated end-to-end optimizing compiler for deep learning,” in &lt;i>13th USENIX symposium on operating systems design and implementation, OSDI 2018, carlsbad, ca, usa, october 8-10, 2018&lt;/i>, 2018, pp. 578–594. Available: &lt;a href="https://www.usenix.org/conference/osdi18/presentation/chen">https://www.usenix.org/conference/osdi18/presentation/chen&lt;/a>&lt;/div>
+&lt;/div>
+&lt;div class="csl-entry">&lt;a id="citeproc_bib_item_3">&lt;/a>
+&lt;div class="csl-left-margin">[3]&lt;/div>&lt;div class="csl-right-inline">J. Roesch &lt;i>et al.&lt;/i>, “Relay: a new ir for machine learning frameworks,” in &lt;i>Proceedings of the 2nd acm sigplan international workshop on machine learning and programming languages&lt;/i>, 2018, p. nil. doi: &lt;a href="https://doi.org/10.1145/3211346.3211348">10.1145/3211346.3211348&lt;/a>.&lt;/div>
+&lt;/div>
+&lt;div class="csl-entry">&lt;a id="citeproc_bib_item_4">&lt;/a>
+&lt;div class="csl-left-margin">[4]&lt;/div>&lt;div class="csl-right-inline">J. Roesch &lt;i>et al.&lt;/i>, “Relay: A High-Level Compiler for Deep Learning,” 2019.&lt;/div>
+&lt;/div>
+&lt;div class="csl-entry">&lt;a id="citeproc_bib_item_5">&lt;/a>
+&lt;div class="csl-left-margin">[5]&lt;/div>&lt;div class="csl-right-inline">T. Chen &lt;i>et al.&lt;/i>, “Learning to optimize tensor programs,” in &lt;i>Proceedings of the 32nd international conference on neural information processing systems&lt;/i>, 2018, pp. 3393–3404.&lt;/div>
+&lt;/div>
+&lt;div class="csl-entry">&lt;a id="citeproc_bib_item_6">&lt;/a>
+&lt;div class="csl-left-margin">[6]&lt;/div>&lt;div class="csl-right-inline">L. Zheng &lt;i>et al.&lt;/i>, “Ansor: Generating high-performance tensor programs for deep learning,” in &lt;i>14th USENIX symposium on operating systems design and implementation, OSDI 2020, virtual event, november 4-6, 2020&lt;/i>, 2020, pp. 863–879. Available: &lt;a href="https://www.usenix.org/conference/osdi20/presentation/zheng">https://www.usenix.org/conference/osdi20/presentation/zheng&lt;/a>&lt;/div>
+&lt;/div>
+&lt;div class="csl-entry">&lt;a id="citeproc_bib_item_7">&lt;/a>
+&lt;div class="csl-left-margin">[7]&lt;/div>&lt;div class="csl-right-inline">S. Zheng, Y. Liang, S. Wang, R. Chen, and K. Sheng, “Flextensor,” in &lt;i>Proceedings of the twenty-fifth international conference on architectural support for programming languages and operating systems&lt;/i>, 2020, p. nil. doi: &lt;a href="https://doi.org/10.1145/3373376.3378508">10.1145/3373376.3378508&lt;/a>.&lt;/div>
+&lt;/div>
+&lt;div class="csl-entry">&lt;a id="citeproc_bib_item_8">&lt;/a>
+&lt;div class="csl-left-margin">[8]&lt;/div>&lt;div class="csl-right-inline">J. Zhao &lt;i>et al.&lt;/i>, “Akg: automatic kernel generation for neural processing units using polyhedral transformations,” in &lt;i>Proceedings of the 42nd acm sigplan international conference on programming language design and implementation&lt;/i>, 2021, p. nil. doi: &lt;a href="https://doi.org/10.1145/3453483.3454106">10.1145/3453483.3454106&lt;/a>.&lt;/div>
+&lt;/div>
+&lt;div class="csl-entry">&lt;a id="citeproc_bib_item_9">&lt;/a>
+&lt;div class="csl-left-margin">[9]&lt;/div>&lt;div class="csl-right-inline">J. Zhao and P. Di, “Optimizing the memory hierarchy by compositing automatic transformations on computations and data,” in &lt;i>2020 53rd annual ieee/acm international symposium on microarchitecture (micro)&lt;/i>, 2020, p. nil. doi: &lt;a href="https://doi.org/10.1109/micro50266.2020.00044">10.1109/micro50266.2020.00044&lt;/a>.&lt;/div>
+&lt;/div>
+&lt;/div></content><category scheme="https://waldonchen.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%BC%96%E8%AF%91%E5%99%A8/" term="深度学习编译器" label="深度学习编译器"/><category scheme="https://waldonchen.github.io/tags/tvm/" term="tvm" label="tvm"/></entry></feed>
