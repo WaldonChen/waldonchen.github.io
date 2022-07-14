@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn"><title type="text">JS-CHEN</title><subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle><updated>2022-07-13T07:36:03+00:00</updated><id>https://waldonchen.github.io/</id><link rel="alternate" type="text/html" href="https://waldonchen.github.io/"/><link rel="self" type="application/atom+xml" href="https://waldonchen.github.io/atom.xml"/><author><name>Jun-Shi Chen</name><uri>https://waldonchen.github.io/</uri><email>cjuns@ustc.edu.cn</email></author><rights>Copyright @ 2022-2032, Jun-Shi Chen; All Rights Reserved.</rights><generator uri="https://gohugo.io/" version="0.101.0">Hugo</generator><entry><title type="text">My First Post</title><link rel="alternate" type="text/html" href="https://waldonchen.github.io/posts/my-first-post/"/><id>https://waldonchen.github.io/posts/my-first-post/</id><updated>2022-07-13T07:35:57+00:00</updated><published>2022-07-13T11:45:59+08:00</published><author><name>Jun-Shi Chen</name><uri>https://github.com/waldonchen/</uri><email>cjuns@ustc.edu.cn</email></author><rights>Copyright @ 2022-2032, Jun-Shi Chen; All Rights Reserved.</rights><summary type="html">First Section Hello, World!</summary><content type="html">&lt;h1 id="first-section">First Section&lt;/h1>
-&lt;p>Hello, World!&lt;/p></content></entry><entry><title type="text">深度学习编译器</title><link rel="alternate" type="text/html" href="https://waldonchen.github.io/posts/deep-learning-compiler/"/><id>https://waldonchen.github.io/posts/deep-learning-compiler/</id><updated>2022-07-13T07:35:57+00:00</updated><published>2022-07-07T11:03:00+08:00</published><author><name>Jun-Shi Chen</name><uri>https://github.com/waldonchen/</uri><email>cjuns@ustc.edu.cn</email></author><rights>Copyright @ 2022-2032, Jun-Shi Chen; All Rights Reserved.</rights><summary type="html">本文整理深度学习编译器相关的论文和来自知乎等网站的相关材料[1]。 1 深度学习编译器相关论文 1.1 Survey The Deep Learning Compiler: A Comprehensive Survey DL编译器的surv……</summary><content type="html">&lt;p>本文整理深度学习编译器相关的论文和来自知乎等网站的相关材料&lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_1">[1]&lt;/a>。&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn"><title type="text">JS-CHEN</title><subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle><updated>2022-07-14T02:35:52+00:00</updated><id>https://waldonchen.github.io/</id><link rel="alternate" type="text/html" href="https://waldonchen.github.io/"/><link rel="self" type="application/atom+xml" href="https://waldonchen.github.io/atom.xml"/><author><name>Jun-Shi Chen</name><uri>https://waldonchen.github.io/</uri><email>cjuns@ustc.edu.cn</email></author><rights>Copyright @ 2022-2032, Jun-Shi Chen; All Rights Reserved.</rights><generator uri="https://gohugo.io/" version="0.101.0">Hugo</generator><entry><title type="text">My First Post</title><link rel="alternate" type="text/html" href="https://waldonchen.github.io/posts/my-first-post/"/><id>https://waldonchen.github.io/posts/my-first-post/</id><updated>2022-07-14T02:35:49+00:00</updated><published>2022-07-13T11:45:59+08:00</published><author><name>Jun-Shi Chen</name><uri>https://github.com/waldonchen/</uri><email>cjuns@ustc.edu.cn</email></author><rights>Copyright @ 2022-2032, Jun-Shi Chen; All Rights Reserved.</rights><summary type="html">First Section Hello, World!</summary><content type="html">&lt;h1 id="first-section">First Section&lt;/h1>
+&lt;p>Hello, World!&lt;/p>
+&lt;p>&lt;img src="https://github.com/marketplace/actions/github-pages-action" alt="GitHub Pages action">
+&lt;img src="https://github.com/marketplace/actions/hugo-setup" alt="Hugo action">&lt;/p></content></entry><entry><title type="text">深度学习编译器</title><link rel="alternate" type="text/html" href="https://waldonchen.github.io/posts/deep-learning-compiler/"/><id>https://waldonchen.github.io/posts/deep-learning-compiler/</id><updated>2022-07-14T02:35:49+00:00</updated><published>2022-07-07T11:03:00+08:00</published><author><name>Jun-Shi Chen</name><uri>https://github.com/waldonchen/</uri><email>cjuns@ustc.edu.cn</email></author><rights>Copyright @ 2022-2032, Jun-Shi Chen; All Rights Reserved.</rights><summary type="html">本文整理深度学习编译器相关的论文和来自知乎等网站的相关材料[1]。 1 深度学习编译器相关论文 1.1 Survey The Deep Learning Compiler: A Comprehensive Survey DL编译器的surv……</summary><content type="html">&lt;p>本文整理深度学习编译器相关的论文和来自知乎等网站的相关材料&lt;a href="https://waldonchen.github.io/posts/deep-learning-compiler/#citeproc_bib_item_1">[1]&lt;/a>。&lt;/p>
 &lt;h2 id="深度学习编译器相关论文">&lt;span class="section-num">1&lt;/span> 深度学习编译器相关论文&lt;/h2>
 &lt;h3 id="survey">&lt;span class="section-num">1.1&lt;/span> Survey&lt;/h3>
 &lt;ul>
@@ -214,15 +216,60 @@ Poly研究领域的博士&lt;/p>
 &lt;/ul>
 &lt;h3 id="深度学习编译器-柳嘉强">&lt;span class="section-num">2.4&lt;/span> &lt;a href="https://www.zhihu.com/people/liu-jia-qiang-18-27">深度学习编译器@柳嘉强&lt;/a>&lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/511043383">7. 深度学习编译器 - 算子的高效实现&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/469972467">6. 深度学习编译器 - 低精度计算之量化&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/436025551">5. 深度学习编译器 - 图优化（续)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/412217136">5. 深度学习编译器-图优化&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/344752857">4. 深度学习编译器-自动微分&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/338299844">3. 深度学习编译器 - 图表示&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/307750772">1. 深度学习编译器 - 引言&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/309793908">2. 深度学习编译器 - 前端&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/307750772">1. 深度学习编译器-引言&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/338299844">3. 深度学习编译器 - 图表示&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/344752857">4. 深度学习编译器 - 自动微分&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/412217136">5. 深度学习编译器 - 图优化&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/436025551">5. 深度学习编译器 - 图优化（续)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/469972467">6. 深度学习编译器 - 低精度计算之量化&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/511043383">7. 深度学习编译器 - 算子的高效实现&lt;/a>&lt;/li>
 &lt;/ul>
+&lt;h3 id="从零开始学习深度学习编译器">&lt;span class="section-num">2.5&lt;/span> &lt;a href="https://github.com/BBuf/tvm_learn">从零开始学习深度学习编译器&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/sZLWjYebbHjCgQ6XAZCiOw">一，深度学习编译器及TVM 介绍&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/fPpqKL3uaaJ5QlNS79DZ5Q">二，TVM中的scheduler&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/KFxd3zf76EP3DFcCAPZjvQ">三，基于ONNX模型结构了解TVM的前端&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/1YlTSUArDIzY-9zeUAIfhQ">四，解析TVM算子&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/5JAWE9RTTXwDJR5HqlsCzA">五，TVM Relay以及Pass简介&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/CZzC5klWoFftUlOKkpvEZg">六，TVM的编译流程详解&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/IMm1nurpoESFRLxHcEYxcQ">七，万字长文入门TVM Pass&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/QphPwnRE5uANJk2qiqlI6w">八，TVM的算符融合以及如何使用TVM Pass Infra自定义Pass&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/n7-ZTzCwFOvHrrzg4gFXQQ">九，TVM的CodeGen流程&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/9nnrXhzP_gqFEPuIMdEE5w">十，TVM的整体把握&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/4pD00N9HnPiIYUOGSnSuIw">十一，初识MLIR&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/jMHesvKmAUU5dYH0WznulA">十二，MLIR Toy Tutorials学习笔记一&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/3N9DK7aQtjoLgs-s0lP-jg">十三，如何在MLIR里面写Pass？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/3hAf7zxEKwRvnVAKhziTmA">十四，MLIR Toy Tutorials学习笔记之部分Lowering&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/ve2l3luRzIeDwG4PHjhDlQ">十五，MLIR Toy Tutorials学习笔记之Lowering到LLVM IR&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/SFHWUm63BqsD9SWwuW83mA">十六，MLIR ODS要点总结上篇&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/TsaMULNUXIVlUPnVs2WexA">十七，MLIR ODS要点总结下篇&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/yD-b75p1An4YTpfoIgB8mQ">十八，MLIR中的Interfaces&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/qmFpGtH0oB_ml0LQGPUqPA">十九，MLIR的Pass机制实践&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/7QwJvTZ9Z2KbUwxqvQHC2g">二十，MLIR的Pattern Rewrite机制&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/Kt4xDLo-NRui8Whl0DqcSA">番外一，Data Flow和Control Flow&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/7Wvv4VOPdj6N_CEg8bJFXw">番外二，在Jetson Nano上玩TVM&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ol>
+&lt;li>
+&lt;p>其它&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/ohWy5yBrsKpzApfjQLXWJg">白杨：TVM源语-Compute篇&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/79lzlCHAxQEE0EQcxL07XQ">MLSys 15-884: Course Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/533807811">OSDI 2021 PET 论文解读（代码生成相关工作）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/uE5VhU_s3NgndPk2X6zbAA">Buddy-MLIR 项目详解（入门 MLIR 极佳选择）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/mwIc9DZo4r7YgYsPus-2tA">【社区实践】为 TVM 新增 OneFlow 前端&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/SLzMKYugrkhQifqahfdVNw">MLIR：摩尔定律终结的编译器基础结构 论文解读&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/d8v9Q3EAkv8TknP5Hh7N7A">【TVM 三代优化巡礼】在X86上将普通的矩阵乘法算子提速90倍&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/gbpqYwPbtHp1RIYPD_ZlCg">【论文解读】基于MLIR生成矩阵乘法的高性能GPU代码，性能持平cuBLAS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/JENCa_GNGPHhOspGb79ugA">【用沐神的方法阅读PyTorch FX论文】&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/eUIm4QZbKU69B9_h3f109A">【以OneFlow为例探索MLIR的实际开发流程】&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/goAtJKe6p0e3pbp5vcQWfA">可以让深度学习编译器来指导算子优化吗&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mp.weixin.qq.com/s/OJCHzh4opNN2Mnomz_6L9Q">Ansor论文阅读笔记&amp;amp;&amp;amp;论文翻译&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
 &lt;h2 id="21442327712599129486">参考文献&lt;/h2>
 &lt;style>.csl-left-margin{float: left; padding-right: 0em;}
 .csl-right-inline{margin: 0 0 0 1em;}&lt;/style>&lt;div class="csl-bib-body">
