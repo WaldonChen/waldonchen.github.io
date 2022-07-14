@@ -8,3 +8,6 @@ draft: false
 
 Hello, World!
 
+![GitHub Pages action](https://github.com/marketplace/actions/github-pages-action)
+![Hugo action](https://github.com/marketplace/actions/hugo-setup)
+
